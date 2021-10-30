@@ -1,0 +1,569 @@
+@import "nullstyle.scss";
+
+.wrapper {
+   background-color: #f9f9f9;
+}
+.ticker-block {
+   max-width: 100%;
+}
+.ticker {
+   padding: 14px;
+   font-size: 18px;
+   line-height: 21px;
+   color: #1c1621;
+   background-color: #fff;
+   z-index: 2;
+   position: relative;
+}
+
+.body__content {
+   max-width: 1200px;
+   padding: 0px 15px;
+   margin: 0 auto;
+   display: flex;
+   position: relative;
+}
+
+.profile__conteiner-mobile {
+   width: 100%;
+   padding: 39px 20px;
+   background-color: #f5f5f5;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   display: none;
+}
+
+.content {
+   &__conteiner {
+      max-width: 900px;
+      padding: 0px 30px 0px 0px;
+   }
+
+   &__support {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__img {
+      width: 870px;
+      height: 290px;
+      background-color: #cfcfcf;
+      margin: 23px 0px 60px 0px;
+      border-radius: 10px;
+   }
+
+   &__well {
+   }
+}
+.conteiner {
+}
+.logo {
+}
+.support {
+   &__title {
+      font-family: "Gilroy-Medium";
+      font-size: 18px;
+      line-height: 21px;
+      color: #1c1621;
+      background-image: url("../img/ico.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      padding: 0px 0px 0px 25px;
+   }
+
+   &__title:hover {
+      text-decoration: underline;
+   }
+}
+.well {
+   &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      color: #1c1621;
+      margin: 0px 0px 27px 0px;
+   }
+
+   &__title span {
+      color: #00a407;
+   }
+
+   &__buttons {
+   }
+
+   &__button {
+   }
+}
+.btn-1 {
+   display: inline-block;
+   padding: 24px 40px;
+   background: #5b00a4;
+   border: 1px solid #5b00a4;
+   color: #f9f9f9;
+   box-sizing: border-box;
+   border-radius: 100px;
+   font-family: "Gilroy";
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+   transition: all 0.3s ease;
+   margin: 0px 30px 0px 0px;
+}
+.btn-1:last-child {
+   margin: 0px;
+}
+
+.btn-1:hover {
+   box-shadow: 0px 4px 30px rgba(91, 0, 164, 0.4);
+}
+
+.btn-2 {
+   display: inline-block;
+   padding: 24px 40px;
+   background: transparent;
+   border: 1px solid #1C1621;
+   color: #1C1621;
+   box-sizing: border-box;
+   border-radius: 100px;
+   font-family: "Gilroy";
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+   transition: all 0.3s ease;
+   margin: 0px 30px 0px 0px;
+}
+
+.btn-2:hover {
+   background: #5b00a4;
+   border: 1px solid #5b00a4;
+   color: #f9f9f9;
+   box-shadow: 0px 4px 30px rgba(91, 0, 164, 0.4);
+}
+
+.content__checkbox {
+   display: flex;
+   position: relative;
+}
+
+.switch {
+   margin: 0px 8px 0px 0px;
+}
+
+.switch input {
+   display: none;
+}
+
+.slider {
+   width: 25px;
+   height: 13px;
+   position: absolute;
+   cursor: pointer;
+   top: 64px;
+   left: 0px;
+   right: 0px;
+   bottom: 0;
+   background-color: #dfdfdf;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   border-radius: 34px;
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 13px;
+   width: 13px;
+   left: 0px;
+   bottom: 0px;
+   background-color: #1c1621;
+   -webkit-transition: 0.4s;
+   transition: 0.4s;
+   border-radius: 50%;
+}
+
+input:checked + .slider::before {
+   background-color: #00a407;
+}
+
+input:focus + .slider::before {
+   box-shadow: 0 0 1px #00a407;
+}
+
+input:checked + .slider:before {
+   -webkit-transform: translateX(13px);
+   -ms-transform: translateX(13px);
+   transform: translateX(13px);
+}
+
+.slider__title {
+   padding: 60px 0px 25px 25px;
+}
+
+.content {
+   &__tabs {
+      padding: 0px 0px 117px 0px;
+      background-color: #f3f3f3;
+      position: relative;
+   }
+}
+.tabs {
+   &__block {
+   }
+
+   &__row {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+   }
+
+   &__title {
+      text-align: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #1c1621;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      padding: 26px 32px;
+   }
+
+   &__input {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+   }
+
+   &__subtitle {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 32px 0px 25px;
+      background-color: #f3f3f3;
+   }
+
+   &__subtitle-2 {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 32px 0px 25px;
+      background-color: #f9f9f9;
+   }
+
+   &__subtitle-block {
+      display: none;
+      flex: 1 1 auto;
+      border-top: 2px solid rgba(28, 22, 33, 0.3);
+   }
+
+   &__btn {
+   }
+}
+
+#tab-1:checked ~ .tabs__title-1 {
+   color: #5b00a4;
+}
+#tab-1:checked ~ .tabs__subtitle-block-1 {
+   display: block;
+}
+
+#tab-2:checked ~ .tabs__title-2 {
+   color: #5b00a4;
+}
+#tab-2:checked ~ .tabs__subtitle-block-2 {
+   display: block;
+}
+
+#tab-3:checked ~ .tabs__title-3 {
+   color: #5b00a4;
+}
+#tab-3:checked ~ .tabs__subtitle-block-3 {
+   display: block;
+}
+
+#tab-4:checked ~ .tabs__title-4 {
+   color: #5b00a4;
+}
+#tab-4:checked ~ .tabs__subtitle-block-4 {
+   display: block;
+}
+
+#tab-5:checked ~ .tabs__title-5 {
+   color: #5b00a4;
+}
+#tab-5:checked ~ .tabs__subtitle-block-5 {
+   display: block;
+}
+
+.tabs {
+   &__subtitle-statistics {
+   }
+
+   &__subtitle-card {
+      margin: 40px 60px 29px 60px;
+      padding: 0px 59px 0px 92px;
+      display: flex;
+      background-color: #f9f9f9;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      border-radius: 0px 10px 10px 0px;
+   }
+
+   &__subtitle-card {
+      margin: 0px 60px 50px 60px;
+   }
+
+   &__statistics-title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #1c1621;
+      padding: 50px 0px 40px 60px;
+   }
+}
+.card {
+   &__coins {
+      position: absolute;
+      left: -35px;
+      top: 35px;
+      padding: 10px 25px 0px 25px;
+      background-color: #5b00a4;
+      font-weight: 500;
+      font-size: 16px;
+      color: #f9f9f9;
+      transform: rotate(-90deg);
+      text-align: center;
+      height: 37px;
+      border-radius: 10px 10px 0px 0px;
+   }
+
+   &__block {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__block-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__text {
+      padding: 24px 0px 12px 0px;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1c1621;
+   }
+}
+.card-pzm {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 28px;
+   color: #1c1621;
+   padding: 0px 0px 24px 0px;
+}
+
+.card-pzm span {
+   color: #00a407;
+}
+
+.subtitle {
+   &__column {
+      padding: 18px 0px 18px 0px;
+   }
+}
+.column {
+   &__subtitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #1c1621;
+   }
+
+   &__text {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1c1621;
+      position: relative;
+   }
+
+   &__text-1 {
+      padding: 0px 0px 0px 14px;
+   }
+
+   &__text-1::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      background-color: #00a407;
+      border-radius: 50%;
+   }
+
+   &__text-2 {
+      padding: 0px 0px 0px 14px;
+   }
+
+   &__text-2::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      background-color: #1c1621;
+      border-radius: 50%;
+   }
+}
+
+.tabs__btn {
+   display: inline-block;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   color: #1c1621;
+   background-color: transparent;
+   border: 1px solid #1c1621;
+   box-sizing: border-box;
+   border-radius: 100px;
+   padding: 10px 37px;
+   transition: all 0.3s ease;
+}
+
+.tabs__btn:hover {
+   color: #f9f9f9;
+   background-color: #5b00a4;
+   border: 1px solid #5b00a4;
+   box-sizing: border-box;
+   border-radius: 100px;
+   padding: 10px 37px;
+}
+
+.profile__conteiner {
+   width: 270px;
+   padding: 89px 20px;
+   background-color: #f5f5f5;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: sticky;
+   top: 0px;
+   right: 0;
+}
+
+.profile {
+   &__title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #1c1621;
+      padding: 0px 0px 30px 0px;
+   }
+
+   &__img {
+      margin: 0px 0px 18px 0px;
+   }
+
+   &__name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: #1c1621;
+      padding: 0px 0px 7px 0px;
+   }
+
+   &__edit {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(28, 22, 33, 0.7);
+      padding: 0px 0px 31px 0px;
+   }
+
+   &__text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1c1621;
+      padding: 0px 0px 15px 0px;
+      position: relative;
+   }
+
+   &__text span {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      color: #5b00a4;
+   }
+
+   &__text :last-child {
+      display: inline-block;
+      padding: 0px 0px 23px 0px;
+   }
+
+   &__text :last-child::after {
+      content: "";
+      position: absolute;
+      left: -40px;
+      bottom: 15px;
+      width: 221px;
+      height: 1px;
+      background-color: #f4f2fb;
+      display: flex;
+   }
+
+   &__btn {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #ffffff;
+      width: 100%;
+      padding: 10px 0px;
+      margin: 0px 0px 15px 0px;
+      background: #ffffff;
+      border-radius: 5px;
+      color: #1c1621;
+      transition: all 0.3s ease;
+   }
+
+   &__btn:last-child {
+      margin: 0px;
+   }
+
+   &__btn:hover {
+      background: #5b00a4;
+      color: #fff;
+   }
+}
+
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+
+   @font-face {
+      font-family: "Gilroy";
+      src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+   }
+
+   @font-face {
+      font-family: "Gilroy";
+      src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+   }
+}
